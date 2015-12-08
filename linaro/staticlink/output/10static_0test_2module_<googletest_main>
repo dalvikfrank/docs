@@ -1,0 +1,29 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/ndk/sources/third_party/googletest/Android.mk====
+
+LOCAL_MODULE:= googletest_main
+
+LOCAL_MODULE:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main
+
+LOCAL_STATIC_LIBRARIES:= googletest_main

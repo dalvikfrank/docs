@@ -1,0 +1,40 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/minui/Android.mk====
+
+LOCAL_MODULE:= libminui
+
+LOCAL_MODULE:= libminui
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libext4_utils_static \
+    libsparse_static \
+    libminzip \
+    libz \
+    libmtdutils \
+    libmincrypt \
+    libminadbd \
+    libfusesideload \
+    libminui
+
+LOCAL_STATIC_LIBRARIES:= \
+    libmincrypt \
+    libminui
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/system/core/healthd/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libbatteryservice libbinder libminui
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/system/extras/slideshow/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libminui

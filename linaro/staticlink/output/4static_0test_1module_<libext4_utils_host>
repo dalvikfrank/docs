@@ -1,0 +1,25 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/system/core/fastboot/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    $(EXTRA_STATIC_LIBS) \
+    libziparchive-host \
+    libext4_utils_host
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/system/extras/ext4_utils/Android.mk====
+
+LOCAL_MODULE:= libext4_utils_host
+
+LOCAL_STATIC_LIBRARIES+= \
+    libext4_utils_host
+
+LOCAL_STATIC_LIBRARIES+= \
+    libext4_utils_host
+
+LOCAL_STATIC_LIBRARIES+= \
+    libext4_utils_host

@@ -1,0 +1,23 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/frameworks/av/media/libstagefright/codecs/amrnb/enc/Android.mk====
+
+LOCAL_MODULE:= libstagefright_amrnbenc
+
+LOCAL_STATIC_LIBRARIES:= \
+        libstagefright_amrnbenc
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/frameworks/opt/net/voip/src/jni/rtp/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libgsm libstagefright_amrnbdec libstagefright_amrnbenc
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/frameworks/base/media/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libstagefright_amrnbenc

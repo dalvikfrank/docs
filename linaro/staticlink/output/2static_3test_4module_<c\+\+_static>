@@ -1,0 +1,63 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/build/core/cxx_stl_setup.mk====
+
+static_libraries+= libc++_static
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/ndk/tests/device/test-libc++/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libc++_static
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/ndk/sources/cxx-stl/llvm-libc++/Android.mk====
+
+LOCAL_MODULE:= c++_static
+
+LOCAL_MODULE:= c++_static
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/ndk/sources/cxx-stl/llvm-libc++/test/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libc++_static
+
+
+
+5)  ====/media/frank/jam/linaro/aosp-M/bionic/tests/Android.mk====
+
+static_libraries:= \
+    libm \
+    libc \
+    libc++_static
+
+
+
+6)  ====/media/frank/jam/linaro/aosp-M/external/libcxx/Android.mk====
+
+LOCAL_MODULE:= libc++_static
+
+LOCAL_MODULE:= libc++_static
+
+
+
+7)  ====/media/frank/jam/linaro/aosp-M/system/core/init/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libinit \
+    libfs_mgr \
+    libsquashfs_utils \
+    liblogwrap \
+    libcutils \
+    libbase \
+    libext4_utils_static \
+    libutils \
+    liblog \
+    libc \
+    libselinux \
+    libmincrypt \
+    libc++_static

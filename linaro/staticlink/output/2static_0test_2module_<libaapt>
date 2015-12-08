@@ -1,0 +1,13 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/frameworks/base/tools/aapt/Android.mk====
+
+LOCAL_MODULE:= libaapt
+
+LOCAL_STATIC_LIBRARIES+= libaapt
+
+LOCAL_MODULE:= libaapt
+
+LOCAL_STATIC_LIBRARIES+= libaapt

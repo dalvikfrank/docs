@@ -1,0 +1,23 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/external/libvncserver/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libz libpng libjpeg_static libssl_static
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/external/boringssl/Android.mk====
+
+LOCAL_MODULE:= libssl_static
+
+LOCAL_MODULE:= libssl_static
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/external/conscrypt/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libssl_static
+
+LOCAL_STATIC_LIBRARIES:= libssl_static

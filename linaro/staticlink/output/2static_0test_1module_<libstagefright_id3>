@@ -1,0 +1,26 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/frameworks/av/media/libstagefright/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+        libstagefright_color_conversion \
+        libstagefright_aacenc \
+        libstagefright_matroska \
+        libstagefright_mediafilter \
+        libstagefright_webm \
+        libstagefright_timedtext \
+        libvpx \
+        libwebm \
+        libstagefright_mpeg2ts \
+        libstagefright_id3
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/frameworks/av/media/libstagefright/id3/Android.mk====
+
+LOCAL_MODULE:= libstagefright_id3
+
+LOCAL_STATIC_LIBRARIES:= \
+        libstagefright_id3

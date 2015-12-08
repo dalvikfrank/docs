@@ -1,0 +1,19 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/build/core/native_benchmark.mk====
+
+LOCAL_STATIC_LIBRARIES+= libbenchmark
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bionic/benchmarks/Android.mk====
+
+LOCAL_MODULE:= libbenchmark
+
+LOCAL_MODULE:= libbenchmark
+
+LOCAL_STATIC_LIBRARIES:= libbenchmark
+
+LOCAL_STATIC_LIBRARIES:= libbenchmark

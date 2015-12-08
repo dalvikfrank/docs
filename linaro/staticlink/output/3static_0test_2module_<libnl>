@@ -1,0 +1,27 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/external/wpa_supplicant_8/hostapd/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libnl
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/external/wpa_supplicant_8/wpa_supplicant/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libnl
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/external/android-clat/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libnl
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/external/libnl/Android.mk====
+
+LOCAL_MODULE:= libnl
+
+LOCAL_MODULE:= libnl

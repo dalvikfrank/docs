@@ -1,0 +1,36 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/applypatch/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libmtdutils
+
+LOCAL_STATIC_LIBRARIES+= libapplypatch libmtdutils
+
+LOCAL_STATIC_LIBRARIES+= libapplypatch libmtdutils
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/mtdutils/Android.mk====
+
+LOCAL_MODULE:= libmtdutils
+
+LOCAL_STATIC_LIBRARIES:= libmtdutils
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libext4_utils_static \
+    libsparse_static \
+    libminzip \
+    libz \
+    libmtdutils
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/updater/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libapplypatch libedify libmtdutils

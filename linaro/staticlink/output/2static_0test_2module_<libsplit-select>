@@ -1,0 +1,13 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/frameworks/base/tools/split-select/Android.mk====
+
+LOCAL_MODULE:= libsplit-select
+
+LOCAL_MODULE:= libsplit-select
+
+LOCAL_STATIC_LIBRARIES+= libsplit-select
+
+LOCAL_STATIC_LIBRARIES+= libsplit-select

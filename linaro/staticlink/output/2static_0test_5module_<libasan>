@@ -1,0 +1,19 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/external/compiler-rt/lib/asan/Android.mk====
+
+LOCAL_MODULE:= libasan
+
+LOCAL_MODULE:= libasan
+
+LOCAL_STATIC_LIBRARIES:= libgtest libasan
+
+LOCAL_MODULE:= libasan
+
+LOCAL_MODULE:= libasan
+
+LOCAL_MODULE:= libasan
+
+LOCAL_STATIC_LIBRARIES:= libasan

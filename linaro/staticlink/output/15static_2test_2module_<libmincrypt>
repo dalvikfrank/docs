@@ -1,0 +1,113 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/applypatch/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libmtdutils libmincrypt
+
+LOCAL_STATIC_LIBRARIES+= libapplypatch libmtdutils libmincrypt
+
+LOCAL_STATIC_LIBRARIES+= libapplypatch libmtdutils libmincrypt
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libcutils libc libmincrypt
+
+LOCAL_STATIC_LIBRARIES:= \
+    libext4_utils_static \
+    libsparse_static \
+    libminzip \
+    libz \
+    libmtdutils \
+    libmincrypt
+
+LOCAL_STATIC_LIBRARIES:= \
+    libmincrypt
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/updater/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libmincrypt
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/external/libselinux/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libmincrypt
+
+LOCAL_STATIC_LIBRARIES:= libmincrypt
+
+
+
+5)  ====/media/frank/jam/linaro/aosp-M/system/vold/Android.mk====
+
+static_libraries:= \
+	libfs_mgr \
+	libsquashfs_utils \
+	libscrypt_static \
+	libmincrypt
+
+
+
+6)  ====/media/frank/jam/linaro/aosp-M/system/core/mkbootimg/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libmincrypt
+
+
+
+7)  ====/media/frank/jam/linaro/aosp-M/system/core/fs_mgr/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblogwrap libmincrypt
+
+LOCAL_STATIC_LIBRARIES:= libfs_mgr liblogwrap libcutils liblog libc libmincrypt
+
+
+
+8)  ====/media/frank/jam/linaro/aosp-M/system/core/init/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libinit \
+    libfs_mgr \
+    libsquashfs_utils \
+    liblogwrap \
+    libcutils \
+    libbase \
+    libext4_utils_static \
+    libutils \
+    liblog \
+    libc \
+    libselinux \
+    libmincrypt
+
+
+
+9)  ====/media/frank/jam/linaro/aosp-M/system/core/adb/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libadbd \
+    libbase \
+    libfs_mgr \
+    liblog \
+    libcutils \
+    libc \
+    libmincrypt
+
+
+
+10)  ====/media/frank/jam/linaro/aosp-M/system/core/libmincrypt/Android.mk====
+
+LOCAL_MODULE:= libmincrypt
+
+LOCAL_MODULE:= libmincrypt
+
+
+
+11)  ====/media/frank/jam/linaro/aosp-M/system/core/libmincrypt/test/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libmincrypt
+
+LOCAL_STATIC_LIBRARIES:= libmincrypt

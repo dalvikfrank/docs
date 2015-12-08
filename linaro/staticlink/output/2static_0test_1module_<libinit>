@@ -1,0 +1,12 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/system/core/init/Android.mk====
+
+LOCAL_MODULE:= libinit
+
+LOCAL_STATIC_LIBRARIES:= \
+    libinit
+
+LOCAL_STATIC_LIBRARIES:= libinit

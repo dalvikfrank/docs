@@ -1,0 +1,29 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/system/core/fs_mgr/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblogwrap
+
+LOCAL_STATIC_LIBRARIES:= libfs_mgr liblogwrap
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/system/core/init/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libinit \
+    libfs_mgr \
+    libsquashfs_utils \
+    liblogwrap
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/system/core/logwrapper/Android.mk====
+
+LOCAL_MODULE:= liblogwrap
+
+LOCAL_MODULE:= liblogwrap
+
+LOCAL_STATIC_LIBRARIES:= liblog liblogwrap

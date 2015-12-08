@@ -1,0 +1,70 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libext4_utils_static \
+    libsparse_static
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/updater/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= \
+    libext4_utils_static \
+    libsparse_static
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/system/core/libsparse/Android.mk====
+
+LOCAL_MODULE:= libsparse_static
+
+LOCAL_STATIC_LIBRARIES:= \
+    libsparse_static
+
+LOCAL_STATIC_LIBRARIES:= \
+    libsparse_static
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/system/core/fs_mgr/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libsparse_static
+
+
+
+5)  ====/media/frank/jam/linaro/aosp-M/system/core/init/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libinit \
+    libfs_mgr \
+    libsquashfs_utils \
+    liblogwrap \
+    libcutils \
+    libbase \
+    libext4_utils_static \
+    libutils \
+    liblog \
+    libc \
+    libselinux \
+    libmincrypt \
+    libc++_static \
+    libdl \
+    libsparse_static
+
+
+
+6)  ====/media/frank/jam/linaro/aosp-M/system/extras/ext4_utils/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libsparse_static
+
+
+
+7)  ====/media/frank/jam/linaro/aosp-M/system/extras/f2fs_utils/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libsparse_static

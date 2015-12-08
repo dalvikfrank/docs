@@ -1,0 +1,29 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/frameworks/native/services/batteryservice/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libutils \
+    libbinder
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/frameworks/native/libs/binder/Android.mk====
+
+LOCAL_MODULE:= libbinder
+
+LOCAL_MODULE:= libbinder
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/packages/experimental/RpcPerformance/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libbinder
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/system/core/healthd/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libbatteryservice libbinder

@@ -1,0 +1,15 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/sdk/find_lock/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libfindjava
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/sdk/find_java/Android.mk====
+
+LOCAL_MODULE:= libfindjava
+
+LOCAL_STATIC_LIBRARIES:= libfindjava

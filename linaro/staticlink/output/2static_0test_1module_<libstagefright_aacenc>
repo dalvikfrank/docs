@@ -1,0 +1,18 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/frameworks/av/media/libstagefright/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+        libstagefright_color_conversion \
+        libstagefright_aacenc
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/frameworks/av/media/libstagefright/codecs/aacenc/Android.mk====
+
+LOCAL_MODULE:= libstagefright_aacenc
+
+LOCAL_STATIC_LIBRARIES:= \
+          libstagefright_aacenc

@@ -1,0 +1,15 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/system/core/fastboot/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libf2fs_utils_host
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/system/extras/f2fs_utils/Android.mk====
+
+LOCAL_MODULE:= libf2fs_utils_host
+
+LOCAL_STATIC_LIBRARIES:= libf2fs_utils_host

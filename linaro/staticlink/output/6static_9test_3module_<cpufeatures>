@@ -1,0 +1,81 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/hardware/intel/common/omx-components/videocodec/libvpx_internal/libvpx/build/make/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/ndk/tests/abcc/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/ndk/tests/device/test-cpufeatures/jni/Android.mk====
+
+LOCAL_MODULE:= test_cpufeatures
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/ndk/sources/android/cpufeatures/Android.mk====
+
+LOCAL_MODULE:= cpufeatures
+
+LOCAL_MODULE:= cpufeatures
+
+
+
+5)  ====/media/frank/jam/linaro/aosp-M/development/ndk/samples/hello-neon/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+6)  ====/media/frank/jam/linaro/aosp-M/development/ndk/platforms/android-18/samples/MoreTeapots/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+7)  ====/media/frank/jam/linaro/aosp-M/development/ndk/platforms/android-17/samples/Teapot/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+8)  ====/media/frank/jam/linaro/aosp-M/development/ndk/sources/android/ndk_helper/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+9)  ====/media/frank/jam/linaro/aosp-M/external/libvpx/libvpx/build/make/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+10)  ====/media/frank/jam/linaro/aosp-M/cts/tests/tests/security/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures
+
+
+
+11)  ====/media/frank/jam/linaro/aosp-M/cts/tests/tests/os/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= cpufeatures

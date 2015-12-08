@@ -1,0 +1,73 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/build/core/cxx_stl_setup.mk====
+
+static_libraries+= libm libc libdl
+
+static_libraries+= libdl
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bionic/tests/Android.mk====
+
+static_libraries:= \
+    libm \
+    libc \
+    libc++_static \
+    libdl
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/bionic/libdl/Android.mk====
+
+LOCAL_MODULE:= libdl
+
+LOCAL_MODULE:= libdl
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/external/pdfium/fpdfsdk/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libpdfiumcore
+
+# TODO: figure out why turning on exceptions requires manually linking libdl
+
+
+
+5)  ====/media/frank/jam/linaro/aosp-M/packages/apps/Messaging/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libgif
+
+# Link to Android logging (liblog.so) and dynamic linker (libdl
+
+
+
+6)  ====/media/frank/jam/linaro/aosp-M/system/core/init/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libinit \
+    libfs_mgr \
+    libsquashfs_utils \
+    liblogwrap \
+    libcutils \
+    libbase \
+    libext4_utils_static \
+    libutils \
+    liblog \
+    libc \
+    libselinux \
+    libmincrypt \
+    libc++_static \
+    libdl
+
+
+
+7)  ====/media/frank/jam/linaro/aosp-M/system/extras/memtrack/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libc \
+    liblog \
+    libc++abi \
+    libdl

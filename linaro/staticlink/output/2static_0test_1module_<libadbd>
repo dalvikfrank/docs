@@ -1,0 +1,12 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/system/core/adb/Android.mk====
+
+LOCAL_MODULE:= libadbd
+
+LOCAL_STATIC_LIBRARIES:= libadbd
+
+LOCAL_STATIC_LIBRARIES:= \
+    libadbd

@@ -1,0 +1,392 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/build/tools/zipalign/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+	libandroidfw \
+	libutils \
+	libcutils \
+	liblog
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libext4_utils_static \
+    libsparse_static \
+    libminzip \
+    libz \
+    libmtdutils \
+    libmincrypt \
+    libminadbd \
+    libfusesideload \
+    libminui \
+    libpng \
+    libfs_mgr \
+    libbase \
+    libcutils \
+    liblog
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/uncrypt/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libbase liblog
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/updater/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libcutils liblog
+
+
+
+5)  ====/media/frank/jam/linaro/aosp-M/bionic/linker/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libc_nomalloc libziparchive libutils libz liblog
+
+
+
+6)  ====/media/frank/jam/linaro/aosp-M/bionic/tests/Android.mk====
+
+static_libraries:= \
+    libtinyxml2 \
+    liblog
+
+static_libraries:= \
+    libm \
+    libc \
+    libc++_static \
+    libdl \
+    libtinyxml2 \
+    liblog
+
+static_libraries:= \
+    libbase \
+    liblog
+
+
+
+7)  ====/media/frank/jam/linaro/aosp-M/dalvik/dexdump/Android.mk====
+
+static_libraries:= \
+    $(dexdump_static_libraries_sdk) \
+    libutils \
+    liblog
+
+
+
+8)  ====/media/frank/jam/linaro/aosp-M/dalvik/dexlist/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= $(dexdump_static_libraries) libcutils liblog
+
+
+
+9)  ====/media/frank/jam/linaro/aosp-M/dalvik/libdex/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+
+
+10)  ====/media/frank/jam/linaro/aosp-M/external/sqlite/dist/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+LOCAL_STATIC_LIBRARIES+= liblog
+
+
+
+11)  ====/media/frank/jam/linaro/aosp-M/external/sqlite/android/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+
+
+12)  ====/media/frank/jam/linaro/aosp-M/external/v8/Android.mksnapshot.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+
+
+13)  ====/media/frank/jam/linaro/aosp-M/frameworks/compile/libbcc/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= \
+  libutils \
+  libcutils \
+  liblog
+
+
+
+14)  ====/media/frank/jam/linaro/aosp-M/frameworks/compile/libbcc/bcinfo/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libcutils liblog
+
+
+
+15)  ====/media/frank/jam/linaro/aosp-M/frameworks/base/tools/obbtool/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+	libandroidfw \
+	libutils \
+	libcutils \
+	liblog
+
+
+
+16)  ====/media/frank/jam/linaro/aosp-M/frameworks/base/tools/validatekeymaps/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+	libinput \
+	libutils \
+	libcutils \
+	liblog
+
+
+
+17)  ====/media/frank/jam/linaro/aosp-M/frameworks/base/libs/androidfw/tests/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libandroidfw \
+    libutils \
+    libcutils \
+    liblog
+
+
+
+18)  ====/media/frank/jam/linaro/aosp-M/frameworks/wilhelm/tests/sandbox/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    libsndfile \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libOpenSLESUT \
+    liblog
+
+
+
+19)  ====/media/frank/jam/linaro/aosp-M/frameworks/rs/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libcutils libutils liblog
+
+
+
+20)  ====/media/frank/jam/linaro/aosp-M/device/generic/goldfish/libqemu/tests.mk====
+
+LOCAL_STATIC_LIBRARIES:= libcutils liblog
+
+LOCAL_STATIC_LIBRARIES:= libcutils liblog
+
+
+
+21)  ====/media/frank/jam/linaro/aosp-M/cts/suite/audio_quality/lib/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libutils liblog
+
+
+
+22)  ====/media/frank/jam/linaro/aosp-M/cts/suite/audio_quality/test/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libutils libgtest_host libgtest_main_host  liblog
+
+
+
+23)  ====/media/frank/jam/linaro/aosp-M/cts/suite/audio_quality/executable/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libutils liblog
+
+
+
+24)  ====/media/frank/jam/linaro/aosp-M/cts/suite/cts/deviceTests/opengl/test/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libgtest_host libgtest_main_host liblog
+
+
+
+25)  ====/media/frank/jam/linaro/aosp-M/cts/tests/tests/bionic/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= \
+    libbase \
+    libtinyxml2 \
+    liblog
+
+LOCAL_STATIC_LIBRARIES+= \
+    libbase \
+    liblog
+
+
+
+26)  ====/media/frank/jam/linaro/aosp-M/packages/apps/Messaging/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libgif
+
+# Link to Android logging (liblog
+
+
+
+27)  ====/media/frank/jam/linaro/aosp-M/system/core/liblog/Android.mk====
+
+LOCAL_MODULE:= liblog
+
+LOCAL_MODULE:= liblog
+
+LOCAL_MODULE:= liblog
+
+LOCAL_MODULE:= liblog
+
+
+
+28)  ====/media/frank/jam/linaro/aosp-M/system/core/fs_mgr/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libfs_mgr liblogwrap libcutils liblog
+
+
+
+29)  ====/media/frank/jam/linaro/aosp-M/system/core/fastboot/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    $(EXTRA_STATIC_LIBS) \
+    libziparchive-host \
+    libext4_utils_host \
+    libsparse_host \
+    libutils \
+    liblog
+
+
+
+30)  ====/media/frank/jam/linaro/aosp-M/system/core/healthd/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libbatteryservice libbinder libminui libpng libz libutils libstdc++ libcutils liblog
+
+
+
+31)  ====/media/frank/jam/linaro/aosp-M/system/core/adf/libadfhwc/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libadf liblog
+
+
+
+32)  ====/media/frank/jam/linaro/aosp-M/system/core/init/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libinit \
+    libfs_mgr \
+    libsquashfs_utils \
+    liblogwrap \
+    libcutils \
+    libbase \
+    libext4_utils_static \
+    libutils \
+    liblog
+
+
+
+33)  ====/media/frank/jam/linaro/aosp-M/system/core/libutils/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+
+
+34)  ====/media/frank/jam/linaro/aosp-M/system/core/adb/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libadb \
+    libbase \
+    libcrypto_static \
+    libcutils \
+    liblog
+
+LOCAL_STATIC_LIBRARIES:= \
+    libadbd \
+    libbase \
+    libfs_mgr \
+    liblog
+
+
+
+35)  ====/media/frank/jam/linaro/aosp-M/system/core/libcutils/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+LOCAL_MODULE:= libcutils
+# TODO: remove liblog
+
+
+
+36)  ====/media/frank/jam/linaro/aosp-M/system/core/logwrapper/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= liblog
+
+
+
+37)  ====/media/frank/jam/linaro/aosp-M/system/media/audio_utils/tests/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libsndfile libaudioutils liblog
+
+
+
+38)  ====/media/frank/jam/linaro/aosp-M/system/extras/slideshow/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libminui libpng libz libutils libstdc++ libcutils liblog
+
+
+
+39)  ====/media/frank/jam/linaro/aosp-M/system/extras/memtrack/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libc \
+    liblog

@@ -1,0 +1,15 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/external/svox/pico/lib/Android.mk====
+
+LOCAL_MODULE:= libsvoxpico
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/external/svox/pico/tts/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libsvoxpico
+
+LOCAL_STATIC_LIBRARIES:= libsvoxpico

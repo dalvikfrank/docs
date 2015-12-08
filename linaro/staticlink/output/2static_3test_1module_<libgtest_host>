@@ -1,0 +1,37 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/build/core/host_test_internal.mk====
+
+LOCAL_STATIC_LIBRARIES+= libgtest_host
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/art/build/Android.gtest.mk====
+
+LOCAL_STATIC_LIBRARIES:= libgtest_host
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/external/compiler-rt/lib/sanitizer_common/tests/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libsan libgtest_host
+
+
+
+4)  ====/media/frank/jam/linaro/aosp-M/external/gtest/src/Android.mk====
+
+LOCAL_MODULE:= libgtest_host
+
+
+
+5)  ====/media/frank/jam/linaro/aosp-M/cts/suite/audio_quality/test/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libutils libgtest_host
+
+
+
+6)  ====/media/frank/jam/linaro/aosp-M/cts/suite/cts/deviceTests/opengl/test/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= libgtest_host

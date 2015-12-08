@@ -1,0 +1,21 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/external/webp/src/Android.mk====
+
+LOCAL_MODULE:= libwebp-decode
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/external/skia/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+	libgif \
+	libwebp-decode
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/frameworks/ex/framesequence/jni/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libwebp-decode

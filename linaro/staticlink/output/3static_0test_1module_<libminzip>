@@ -1,0 +1,27 @@
+
+
+
+
+1)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/Android.mk====
+
+LOCAL_STATIC_LIBRARIES:= \
+    libext4_utils_static \
+    libsparse_static \
+    libminzip
+
+LOCAL_STATIC_LIBRARIES:= \
+    libmincrypt \
+    libminui \
+    libminzip
+
+
+
+2)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/updater/Android.mk====
+
+LOCAL_STATIC_LIBRARIES+= libapplypatch libedify libmtdutils libminzip
+
+
+
+3)  ====/media/frank/jam/linaro/aosp-M/bootable/recovery/minzip/Android.mk====
+
+LOCAL_MODULE:= libminzip
