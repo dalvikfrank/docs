@@ -9,71 +9,32 @@ import shlex
 import string
 import getopt
 
-#PATH='/media/frank/jam/linaro/aosp-M'
 START_STRING="LOCAL_MODULE"
 END_STRING='STATIC_LIBRARY'
-
-'''
-MACH_STATIC='/media/frank/jam/linaro/LMG/LMG-914_static_link/match.txt'
-PARSER_OUT='/media/frank/jam/linaro/LMG/LMG-914_static_link/out.txt'
-SET_OUT='/media/frank/jam/linaro/LMG/LMG-914_static_link/set.txt'
-def search(path):
-    if len(path)==0 :
-        print ("Invalid path null !")
-    else : 
-        #os.environ['sh_path']=str(path)
-        #os.system('echo $sh_path')
-        #res, output = commands.getstatusoutput('find $sh_path -iname *.mk')
-        #print ("res=%s output=%s" %(res, output))
-        child = subprocess.Popen(["find", PATH,"-iname","*.mk"], stdout=subprocess.PIPE)
-        out = child.communicate() # return out array
-
-        clear(MACH_STATIC)
-
-        #parser 1th time
-        for f in out[0].split('\n'):
-            print ("prepare parser file=%s" %(f))
-            parser(f)
-
-        #parser 2th time
-        parserLibs(MACH_STATIC, PARSER_OUT)
-
-        #parser 3th time, the following choose one of 3
-        #grepOnce(PARSER_OUT, SET_OUT)
-        sortAndGrepOnce(PARSER_OUT, SET_OUT)
-        #grepOnceWithCount(PARSER_OUT, SET_OUT)
-
-        #paser 4th: replace all the "+" with "\+"
-        replace(SET_OUT)
-    return '''
 
 def search_opt(android_dir, match_file, out_file, set_file):
     if len(android_dir)==0 :
         print ("Invalid path null !")
     else : 
-        #os.environ['sh_path']=str(path)
-        #os.system('echo $sh_path')
-        #res, output = commands.getstatusoutput('find $sh_path -iname *.mk')
-        #print ("res=%s output=%s" %(res, output))
         child = subprocess.Popen(["find", android_dir,"-iname","*.mk"], stdout=subprocess.PIPE)
         out = child.communicate() # return out array
 
         clear(match_file)
 
-        #parser 1th time
+        #parser 1th time, parser all the matches wirte to "match_file"
         for f in out[0].split('\n'):
             print ("prepare parser file=%s" %(f))
             parser(f, match_file)
 
-        #parser 2th time
+        #parser 2th time, parser "match_file" and write all the libraries to "out_file"
         parserLibs(match_file, out_file)
 
-        #parser 3th time, the following choose one of 3
-        #grepOnce(out_file, set_file)
+        #parser 3th time, the following choose one of 3, parser "out_file" and keep only once each library
         sortAndGrepOnce(out_file, set_file)
+        #grepOnce(out_file, set_file)
         #grepOnceWithCount(out_file, set_file)
 
-        #paser 4th: replace all the "+" with "\+"
+        #paser 4th: replace all the "+" with "\+" for regular expression
         replace(set_file)
     return
 
@@ -174,7 +135,6 @@ def sortAndGrepOnce(fin, fout):
         aLine = fh.readline()
         if(aLine != ''):
             if aLine not in lines_seen:
-                #oh.write(aLine)
                 lines_seen.append(aLine)
             pass
         else:
@@ -196,7 +156,6 @@ def grepOnceWithCount(fin, fout):
         aLine = fh.readline()
         if(aLine != ''):
             if aLine not in lines_seen:
-                #oh.write(aLine)
                 lines_seen.append(aLine)
             else:
                 pass
@@ -206,7 +165,6 @@ def grepOnceWithCount(fin, fout):
                     index = index + 1
                     #print "index=%d str=%s aLine=%s" %(index, str, aLine)
                     if str == aLine:
-                        #print "yes"
                         array[index] = array[index] + 1
         else:
             done = 1
@@ -230,6 +188,8 @@ def usage():
     print "          MATCH_FILE:    save all the places match regular expression"
     print "          OUT_FILE:      write all the libsxx here"
     print "          SET_FILE:      parser OUT_FILE to set and write here"
+    print ""
+    print "   output :              $MATCH_FILE $OUT_FILE $SET_FILE in $OUT_DIR"
 
 def  main():
     #./libs.py -r /media/frank/jam/linaro/aosp-M -d /media/frank/jam/linaro/LMG/LMG-914_static_link -m match.txt -o out.txt -s set.txt
@@ -253,7 +213,6 @@ def  main():
             usage()
             sys.exit()
     search_opt(android_dir, match_file, out_file, set_file)
-    #search(PATH)
 
 if __name__ == "__main__":
     main()

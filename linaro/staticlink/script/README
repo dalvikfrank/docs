@@ -1,0 +1,41 @@
+author qian.chen@linaro.org
+
+1. Function 
+The scripts help check all the static link libraries of android.
+list all the static libraries by set in set.txt
+next analysis the set.txt, list all the static references 
+and modules in each file like  %d(staticlink)_%d(test case)_%d(module count)_<lib module name>
+
+%d(1): all the static link __EXCEPT__ all the test cases
+%d(2): all the test cases count
+%d(3): how many modules defined the library.
+<*>  : library name referenced
+
+2. How to use it
+
+STEP 1: 
+$ libs.py -a ANDROID_DIR -d OUT_DIR -m MATCH_FILE -o OUT_FILE -s SET_FILE
+
+example like:
+$ libs.py -r /media/frank/jam/linaro/aosp-M -d /media/frank/jam/linaro/LMG/LMG-914_static_link -m match.txt -o out.txt -s set.txt
+it will generate match.txt out.txt. set.txt in directory /media/frank/jam/linaro/LMG/LMG-914_static_link.
+and the set.txt contains all the static libaries sorted and organized by set.
+
+for help:
+$ libs.py -h
+
+STEP 2:
+$ regrex.py -r ANDROID_DIR -s SET_FILE -d OUT_DIR
+
+example like
+$ regrex.py -r /media/frank/jam/linaro/aosp-M -s /media/frank/jam/linaro/LMG/LMG-914_static_link/set.txt -d /media/frank/jam/linaro/LMG/LMG-914_static_link/output
+it will output the static link info about all the libraries by files. see $OUT_DIR or https://github.com/dalvikfrank/docs/tree/qian/linaro/staticlink/output.
+
+for help:
+$ regrex.py -h
+
+
+
+
+
+
