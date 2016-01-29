@@ -1,0 +1,141 @@
+#!/bin/bash
+
+#author: chenqian@meizu.com
+#date: 2016.01.25
+#function: list all the differences commit logs between two branch
+
+OUT_ROOT="/home/`whoami`/tmp"
+OUT_DIR=""
+CUR_DIR="`pwd`"
+
+BR_BEFORE=""
+BR_AFTER=""
+
+DIRNAME_CUR=""
+DIRNAME_FATHER=""
+
+DEBUG=true
+
+function log
+{
+    level=$1
+
+    if [ "x$level" == "x-d" ]; then
+        shift
+        if [ "x$DEBUG" == "xtrue" ]; then
+            echo "Debug: $@"
+        fi
+    elif [ "x$level" == "x-i" ]; then
+        shift
+        echo "Info: $@"
+    elif [ "x$level" == "x-w" ]; then
+        shift
+        echo "Warn: $@"
+    elif [ "x$level" == "x-e" ]; then
+        echo "Error: $@" | tee -a "$OUT_FILE"
+    else
+        echo $@
+    fi
+}
+
+function usage
+{
+    log -i  "commit_diff --br_before Br_A --br_after Br_B"
+    log -i  "commit_diff --br_before android_5.1.0 --br_after android_6.0.0"
+}
+
+function setupOptions
+{
+    if [ $# -eq 0 ]
+    then
+        usage
+        exit 1
+    fi
+
+    while [ $# != 0 ]; do
+        if [ "$1" == "--br_before" ]; then
+            BR_BEFORE="$2"
+        elif [ "$1" == "--br_after" ]; then
+            BR_AFTER="$2"
+        else
+            usage
+            exit 1
+        fi
+        shift
+        shift
+    done
+}
+
+function check
+{
+    res=`repo status | grep -P "\-\-"`
+
+    if [ -n "$res" ]; then 
+        log -e "$res, workspace is _NOT_ clean! please check it run: repo status"
+        return 1
+    fi
+    restore $1
+    if [ $? != '0' ]; then
+        return 1
+    fi
+    restore $2
+    if [ $? != '0' ]; then
+        return 1
+    fi
+    return 0
+}
+
+function restore 
+{
+    res=`repo init -b $1 | grep error`
+    if [ -n "$res" ]; then 
+        log -e "branch $1 is not exsit!"
+        return 1
+    fi
+    return 0
+}
+
+function prepare
+{
+    OUT_DIR=$1/$2..$3
+    if [ ! -d $OUT_DIR ]; then
+        mkdir -p $OUT_DIR
+    fi
+}
+
+
+function generateFileName
+{
+    if [[ $# -eq 0 ]]; then
+        exit
+    fi
+    DIRNAME_CUR=`echo $CUR_DIR | rev | awk -F \/ '{print $1}' | rev`
+    DIRNAME_FATHER=`echo $CUR_DIR | rev | awk -F \/ '{print $2}' | rev`
+    #log -d "DIRNAME_FATHER: $DIRNAME_FATHER, DIRNAME_CUR: $DIRNAME_CUR"
+}
+
+function diff
+{
+    createfile=$3/$4##$5
+    git log --stat $1..$2 > $createfile
+    if [ -e $createfile -a ! -s $createfile ];then
+        rm $createfile
+    fi
+}
+
+function main
+{
+    setupOptions $@
+    check $BR_BEFORE $BR_AFTER
+    if [ $? != '0' ]; then
+        exit 1
+    fi
+    log -i  "handle dir: $CUR_DIR"
+    prepare  $OUT_ROOT $BR_BEFORE $BR_AFTER
+    generateFileName $CUR_DIR
+    log -d "PWD: $PWD"
+    diff $BR_BEFORE $BR_AFTER $OUT_DIR $DIRNAME_FATHER $DIRNAME_CUR
+    restore $BR_BEFORE
+}
+
+main $@
