@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec
+END
+inputstream_wrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/inputstream_wrapper.h
+END
+stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/stream.h
+END
+outputstream_wrapper.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/outputstream_wrapper.h
+END
+jpeg_codec.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/jpeg_codec.cpp
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/Android.mk
+END
+jpeg_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/jpeg_utils.cpp
+END
+jpeg_codec.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/jpeg_codec.h
+END
+jpeg_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/jpeg_utils.h
+END
+inputstream_wrapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/inputstream_wrapper.cpp
+END
+outputstream_wrapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ImageProcess/!svn/ver/358/Effects/jni/image_codec/outputstream_wrapper.cpp
+END

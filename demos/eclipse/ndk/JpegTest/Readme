@@ -1,0 +1,23 @@
+Demo的功能： jpeg图片生成解码后的数据，详细请查看源码
+
+编译Android的应用的时候jni时需要用到nkd，编译的方式如下 
+
+1) eclipse中 
+添加ndk 
+a. properties —>(Resource)builders—> new —> 双击Program—>
+b. location 中输入ndk-build路劲，ex: 
+/home/frank/Downloads/tools/android-ndk-r10e/nkd-build 
+c.下面的working Directory中选择要编译的工程 
+d.在tab页面Build Options中，选择上 “During a “Clean"” 
+
+或者 
+
+2) 命令行Build 
+在命令行中，输入： 
+A.export NDK=/home/frank/Downloads/tools/android-ndk-r10e 
+B.进入要编译的根目录中 
+C.执行 $NDK/ndk-build 
+
+对应的功能就编译完成了 
+
+

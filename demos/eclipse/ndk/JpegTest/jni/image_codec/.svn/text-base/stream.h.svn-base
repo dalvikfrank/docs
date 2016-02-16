@@ -1,0 +1,38 @@
+#ifndef __IMAGE_CODEC_STREAM_H__
+#define __IMAGE_CODEC_STREAM_H__
+
+#include "common.h"
+
+class Stream
+{
+public:
+    Stream() {}
+
+    virtual ~Stream() {}
+
+    virtual size_t read(void* buffer, size_t size) { return 0; }
+
+    virtual bool write(void* buffer, size_t size) { return false; }
+
+    virtual void flush() {}
+
+    virtual size_t skip(size_t size) { return read(NULL, size); }
+
+    virtual bool seek(size_t position) { return false; }
+
+    virtual bool rewind() { return false; }
+
+    virtual bool hasPosition() const { return false; }
+
+    virtual size_t getPosition() const { return 0; }
+
+    virtual bool hasLength() const { return false; }
+
+    virtual size_t getLength() const { return false; }
+
+    virtual bool isAtEnd() const { return false; }
+
+    virtual void close() {}
+};
+
+#endif /* __PHOTO_RENDER_STREAM_H__ */

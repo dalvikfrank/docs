@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include
+END
+jconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jconfig.h
+END
+jdct.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jdct.h
+END
+jsimd_neon.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jsimd_neon.h
+END
+jmemsys.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jmemsys.h
+END
+jmorecfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jmorecfg.h
+END
+cdjpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/cdjpeg.h
+END
+jinclude.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jinclude.h
+END
+jversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jversion.h
+END
+jpegint.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jpegint.h
+END
+cderror.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/cderror.h
+END
+jerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jerror.h
+END
+jchuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jchuff.h
+END
+jdhuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jdhuff.h
+END
+transupp.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/transupp.h
+END
+jpeglib.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ImageProcess/!svn/ver/357/Effects/jni/image_codec/libjpeg/include/jpeglib.h
+END
